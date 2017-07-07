@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Forms</title>
+    <script type='text/javascript' src='forms.js'></script>
+    <script type='text/javascript' src='validations.js'></script>
+    <link href='styles.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One|Lato' rel='stylesheet'>
+  </head>
+  <body>
+    <section class='main-page'>
+      <form class='forms-main hidden' action='index.html' method='postData'>
+
+        <!--First Form Page, Basic Info-->
+        <fieldset class='forms-page'>
+          <legend>Basic Info</legend>
+          <p class='forms-input'>
+            <input name='name' type='text' accept='lettersOnly'>
+            <label for='name'>Name</label>
+          </p>
+          <p class='forms-input'>
+            <input name='email' type='text' accept='emailFormat'>
+            <label for='email'>Email</label>
+          </p>
+          <p class='forms-input'>
+            <input name='phone' type='text' accept='noLetters'>
+            <label for='phone'>Phone Number</label>
+          </p>
+        </fieldset>
+
+        <!--Second Form Page, More Details-->
+        <fieldset class='forms-page'>
+          <legend>More Details</legend>
+          <div class='forms-input multi-checklist'>
+            <label for='animal'>Animals of Choice</label>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Cat</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Horse</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Dog</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Snake</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Mole</div>
+            </section>
+          </div>
+          <div class='forms-input single-checklist'>
+            <label for='animal'>City of Choice</label>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>San Francisco</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Buenos Aires</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Mexico City</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>New York</div>
+            </section>
+            <section class='forms-checkbox'>
+              <div class='checkbox'></div>
+              <div class='checkbox-label'>Vancouver</div>
+            </section>
+          </div>
+        </fieldset>
+
+        <!--Third Form Page, User Bio-->
+        <fieldset class='forms-page'>
+          <legend>User Bio</legend>
+          <p class='forms-input area'>
+            <textarea name='name' rows='8' cols='80'></textarea>
+            <label for='name'>User Bio (Optional)</label>
+          </p>
+        </fieldset>
+
+        <!--Fourth Form Page, Finish-->
+        <fieldset class='forms-page'>
+          <div class='form-finished'>
+            Your information has been submitted. Press ENTER to review or change your answers.
+          </div>
+        </fieldset>
+
+      </form>
+      <section class='sidebar full'>
+        <div class='forms-advance-button'>Create Your Profile</div>
+      </section>
+    </section>
+  </body>
+</html>

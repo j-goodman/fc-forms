@@ -1,0 +1,162 @@
+html {
+  height: 100%;
+  overflow-x: hidden; }
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden; }
+
+.main-page {
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%; }
+  @media screen and (max-width: 999px) {
+    .main-page {
+      flex-direction: column-reverse; } }
+
+.forms-main {
+  background: #B6F8FF;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  transition: width .5s;
+  width: 60%; }
+  @media screen and (max-width: 999px) {
+    .forms-main {
+      height: 80%;
+      width: 100%; } }
+
+.forms-page {
+  border: none;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding-top: 30px;
+  position: absolute;
+  right: 0;
+  transition: left .5s, opacity .16s;
+  width: inherit; }
+  .forms-page legend {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 30px;
+    width: 100%; }
+  .forms-page .forms-input {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    .forms-page .forms-input input[type='text'], .forms-page .forms-input textarea {
+      background: #000;
+      border: none;
+      color: #B6F8FF;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 20px;
+      height: 30px;
+      outline: none;
+      padding: 0 8px 0 8px;
+      transition: background .3s;
+      width: 50%; }
+    .forms-page .forms-input textarea {
+      font-family: 'Lato', sans-serif;
+      height: auto; }
+    .forms-page .forms-input .forms-checkbox {
+      background: #000;
+      border-bottom: 1px solid #B6F8FF;
+      color: #B6F8FF;
+      display: flex;
+      flex-direction: row;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 24px;
+      height: 40px;
+      width: 50%; }
+      .forms-page .forms-input .forms-checkbox .checkbox {
+        background: #B6F8FF;
+        height: 30px;
+        margin: 5px 5px 5px 5px;
+        width: 30px; }
+      .forms-page .forms-input .forms-checkbox .checkbox-label {
+        margin: 5px 0 0 15px; }
+    .forms-page .forms-input .forms-checkbox:hover, .forms-page .forms-input .selected {
+      cursor: pointer; }
+      .forms-page .forms-input .forms-checkbox:hover .checkbox, .forms-page .forms-input .selected .checkbox {
+        background: #FB0D57; }
+    .forms-page .forms-input label {
+      font-size: 16px;
+      margin-top: 8px;
+      text-align: center;
+      margin-bottom: 12px;
+      width: 50%; }
+  .forms-page .reject-input input[type='text'] {
+    background: #FB0D57;
+    transition: none; }
+
+.current-page {
+  display: flex; }
+
+.sidebar {
+  align-items: center;
+  background: #FBEE75;
+  display: flex;
+  justify-content: center;
+  transition: width .5s;
+  width: 40%;
+  z-index: 1; }
+  @media screen and (max-width: 999px) {
+    .sidebar {
+      width: 100%;
+      height: 20%; } }
+
+.hidden {
+  width: 0%; }
+  @media screen and (max-width: 999px) {
+    .hidden {
+      height: 0%; } }
+
+.full {
+  width: 100%; }
+  @media screen and (max-width: 999px) {
+    .full {
+      height: 100%; } }
+
+.forms-advance-button {
+  background: #000;
+  border: 4px solid #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 26px;
+  padding: 22px;
+  text-transform: uppercase; }
+
+.forms-advance-button:hover {
+  background: none;
+  color: #000; }
+
+.inactive {
+  opacity: .2; }
+
+.inactive:hover {
+  background: #000;
+  color: #fff;
+  opacity: .3; }
+
+.form-finished {
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  height: 100%;
+  padding-top: 120px;
+  justify-content: center;
+  margin: auto;
+  width: 50%; }
+
+/*# sourceMappingURL=styles.css.map */
